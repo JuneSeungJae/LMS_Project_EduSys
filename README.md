@@ -9,11 +9,15 @@ cd .\lms_front\
 npm install
 ```
 해서 nextjs에서 필요한 모듈 설치 후 npm run dev로 실행
-* **백 엔드 작업:** 기본적으로 Spring Boot 프로젝트로 구성되어 있으며, 백엔드 로직은 edusys 디렉터리에서 작업합니다. 실행은 보통 아래와 같이 진행하면 됩니다.
-  - 프로젝트 디렉터리로 이동: `cd .\edusys\`
-  - 애플리케이션 실행: `./gradlew bootRun` (Windows는 `gradlew.bat bootRun`)
-  - 빌드 및 테스트: `./gradlew build` 또는 `./gradlew test`
-  - 프론트엔드 작업처럼 바로 확인하고 싶다면 위 명령어를 이용하면 되며, 필요 시 `gradlew` 또는 `gradlew.bat`를 사용해 실행하면 됩니다.
+* **백 엔드 작업:** Spring Boot 기반으로 구성되어 있으며, 백엔드 코드는 edusys 디렉터리에서 작업합니다.
+```
+cd .\edusys\n./gradlew bootRun
+```
+위와 같이 실행하면 되고, Windows 환경에서는 `gradlew.bat bootRun`로 실행하면 됩니다. 빌드나 테스트는 아래처럼 진행하면 됩니다.
+```
+./gradlew build
+./gradlew test
+```
 # 🎓 EduSys: Learning Management System
 
 > **EduSys**는 교육자와 학습자 사이의 효율적인 지식 전달을 위해 설계된 학생 중심의 학습 관리 시스템(LMS)입니다.
